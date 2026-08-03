@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="iOSアプリ「歩いた距離」のプライバシーポリシーです。">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="app-icon.png">
+  <title>プライバシーポリシー｜歩いた距離</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --accent: #f47a32;
+      --accent-deep: #cf5514;
+      --background: #fff8ec;
+      --surface: #ffffff;
+      --text: #292622;
+      --secondary: #69615a;
+      --border: rgba(73, 57, 43, 0.13);
+      --shadow: 0 18px 44px rgba(89, 52, 22, 0.09);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 8% 0%, rgba(244, 122, 50, 0.13), transparent 34rem),
+        var(--background);
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans",
+        "Yu Gothic UI", Meiryo, sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent-deep);
+      text-underline-offset: 0.18em;
+    }
+
+    a:hover { text-decoration-thickness: 2px; }
+
+    .page {
+      width: min(100% - 32px, 780px);
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+
+    .app-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 19px;
+      box-shadow: 0 10px 24px rgba(98, 54, 20, 0.16);
+    }
+
+    .eyebrow {
+      margin: 0 0 3px;
+      color: var(--accent-deep);
+      font-size: 0.82rem;
+      font-weight: 750;
+      letter-spacing: 0.08em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.75rem, 5vw, 2.45rem);
+      line-height: 1.28;
+      letter-spacing: -0.025em;
+    }
+
+    .updated {
+      margin: 8px 0 0;
+      color: var(--secondary);
+      font-size: 0.9rem;
+    }
+
+    .summary,
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .summary {
+      margin: 0 0 18px;
+      padding: 22px 24px;
+      border-left: 5px solid var(--accent);
+    }
+
+    section {
+      margin-top: 16px;
+      padding: 24px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.18rem;
+      line-height: 1.45;
+    }
+
+    p { margin: 0.55em 0; }
+
+    ul {
+      margin: 0.65em 0 0;
+      padding-left: 1.4em;
+    }
+
+    li + li { margin-top: 0.35em; }
+
+    .notice {
+      margin-top: 14px;
+      padding: 13px 15px;
+      color: #55483d;
+      background: #fff3df;
+      border-radius: 14px;
+      font-size: 0.94rem;
+    }
+
+    footer {
+      padding: 28px 8px 0;
+      color: var(--secondary);
+      font-size: 0.86rem;
+      text-align: center;
+    }
+
+    @media (max-width: 520px) {
+      .page { padding-top: 30px; }
+      .hero { gap: 15px; }
+      .app-icon {
+        width: 68px;
+        height: 68px;
+        border-radius: 16px;
+      }
+      .summary,
+      section { border-radius: 18px; }
+      .summary,
+      section { padding: 19px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <img class="app-icon" src="app-icon.png" alt="「歩いた距離」のアプリアイコン">
+      <div>
+        <p class="eyebrow">歩いた距離</p>
+        <h1>プライバシーポリシー</h1>
+        <p class="updated">施行日・最終更新日：2026年8月1日</p>
+      </div>
+    </header>
+
+    <p class="summary">
+      iOSアプリ「歩いた距離」（以下「本アプリ」）は、歩行距離と歩数を端末内で表示するために
+      AppleのHealthKitを利用します。HealthKitのデータを開発者のサーバー、アクセス解析サービス、
+      その他の第三者へ送信することはありません。
+    </p>
+
+    <section>
+      <h2>1. 本ポリシーの適用範囲</h2>
+      <p>
+        本ポリシーは、本アプリおよび本アプリに付属するウィジェットにおける情報の取り扱いに適用されます。
+      </p>
+    </section>
+
+    <section>
+      <h2>2. 本アプリが利用する情報</h2>
+      <p>本アプリは、利用者が許可した場合に限り、HealthKitから次の情報を読み取ります。</p>
+      <ul>
+        <li>歩行＋走行距離</li>
+        <li>歩数</li>
+      </ul>
+      <p>
+        本アプリはHealthKitへデータを書き込みません。また、位置情報、氏名、メールアドレス、連絡先、
+        広告識別子を取得せず、ユーザーアカウントも作成しません。
+      </p>
+      <p>このほか、次の設定・表示用データを端末内に保存します。</p>
+      <ul>
+        <li>距離の単位、表示する記録、テーマ、初期設定の完了状態などのアプリ設定</li>
+        <li>ウィジェットへ表示するために端末内で集計した距離・歩数・更新日時などの要約</li>
+      </ul>
+      <p>また、Firebase Analyticsを通じて次の情報を取得します。</p>
+      <ul>
+        <li>アプリの起動、画面の表示、機能の利用状況などのアプリ操作情報</li>
+        <li>アプリインスタンス識別子</li>
+        <li>端末の種類、OS、アプリのバージョン、言語などの端末・アプリ情報</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. 利用目的</h2>
+      <p>読み取った情報は、次の目的にのみ利用します。</p>
+      <ul>
+        <li>累計、今日、週、月、年および選択した日付の距離・歩数を表示するため</li>
+        <li>期間別の履歴やグラフを表示するため</li>
+        <li>本アプリのウィジェットを更新するため</li>
+        <li>利用者が選択した単位・テーマなどの設定を保持するため</li>
+        <li>利用状況を統計的に分析し、品質改善や機能改善に役立てるため</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. 外部送信・第三者提供</h2>
+      <p>
+        HealthKitから読み取った情報および端末内で作成した集計結果は、開発者が管理するサーバーへ送信されません。
+        本アプリには広告SDKや第三者のトラッキングSDKは組み込まれていません。
+      </p>
+      <p>
+        開発者は、HealthKitの情報を第三者へ提供、販売したり、広告、マーケティング、データマイニングへ
+        利用したりしません。
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Firebase Analyticsの利用</h2>
+      <p>
+        本アプリは、品質改善や機能の利用状況を把握する目的で、Google LLCが提供する
+        Firebase Analyticsを利用します。Firebase Analyticsによって収集された情報はGoogleへ送信され、
+        Googleのプライバシーポリシー等に基づいて管理されます。
+      </p>
+      <p>
+        アプリの起動、画面の表示、機能の利用状況、アプリインスタンス識別子、アプリや端末に関する情報などが
+        Googleへ送信されます。ただし、HealthKitから読み取った歩数・距離を
+        Firebase Analyticsへ送信することはありません。
+      </p>
+      <p>
+        Firebaseにおける情報の取り扱いについては、
+        <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebaseのプライバシーとセキュリティ</a>
+        をご確認ください。
+      </p>
+    </section>
+
+    <section>
+      <h2>6. 端末内での保存と共有</h2>
+      <p>
+        アプリ設定はiOSのUserDefaultsに保存されます。ウィジェットに必要な設定と集計結果は、
+        本アプリと付属ウィジェットだけが利用できるApp Group領域に保存されます。
+        これらは同じ端末内で本アプリとウィジェットの間だけで共有され、外部へ送信されません。
+      </p>
+    </section>
+
+    <section>
+      <h2>7. 保存期間と削除</h2>
+      <p>
+        開発者はHealthKitの情報を外部サーバーで保持しません。
+        アプリ設定とウィジェット用の集計結果は、表示に必要な間、端末内に保存されます。
+      </p>
+      <p>
+        Firebase Analyticsの情報は、Google Analyticsで設定したデータ保持期間に従って保持されます。
+        本アプリを削除すると以後の情報収集は停止しますが、すでに送信された統計情報が直ちに削除されるとは限りません。
+      </p>
+      <p>
+        本アプリを削除すると、本アプリが端末内に保存した設定と集計結果は削除対象になります。
+        HealthKit内の元の記録は本アプリが作成したものではなく、本アプリを削除しても消去されません。
+        HealthKitの記録は「ヘルスケア」アプリから利用者自身が管理できます。
+      </p>
+    </section>
+
+    <section>
+      <h2>8. HealthKitへのアクセス権</h2>
+      <p>
+        HealthKitへのアクセスは任意です。許可しない場合、または後から許可を取り消した場合、
+        該当する距離や歩数を本アプリで表示できなくなります。
+      </p>
+      <p>
+        アクセス権は、iPhoneの「設定」または「ヘルスケア」アプリからいつでも確認・変更できます。
+      </p>
+    </section>
+
+    <section>
+      <h2>9. 安全管理</h2>
+      <p>
+        本アプリは、iOSのサンドボックス、HealthKitの権限管理、App Groupのアクセス制御を利用し、
+        情報を端末内で取り扱います。開発者は、本アプリの目的に不要な情報を取得しないよう努めます。
+      </p>
+    </section>
+
+    <section>
+      <h2>10. 医療目的での利用について</h2>
+      <p>
+        本アプリは、日常の歩行距離と歩数を確認するためのフィットネス用アプリです。
+        医療上の診断、治療、助言または緊急対応を目的とするものではありません。
+      </p>
+    </section>
+
+    <section>
+      <h2>11. 本ポリシーの変更</h2>
+      <p>
+        本アプリの機能や情報の取り扱いを変更した場合、必要に応じて本ポリシーを更新します。
+        重要な変更がある場合は、本ページまたは本アプリ内で分かりやすくお知らせします。
+        更新後のポリシーは、本ページに掲載した時点から適用されます。
+      </p>
+    </section>
+
+    <section>
+      <h2>12. お問い合わせ</h2>
+      <p>
+        本ポリシーまたは本アプリに関するお問い合わせは、
+        <a id="issues-link" href="#" hidden>本ページを公開しているGitHubリポジトリのIssues</a>
+        <span id="issues-fallback">App Storeの本アプリ掲載ページにある「Appサポート」</span>
+        からご連絡ください。
+      </p>
+      <p class="notice">
+        GitHubのIssuesを利用する場合は、歩数・距離などのHealthKitデータや個人情報を投稿しないでください。
+      </p>
+    </section>
+
+    <footer>
+      © 2026 「歩いた距離」開発者
+    </footer>
+  </main>
+
+  <script>
+    (() => {
+      const host = window.location.hostname;
+      const repository = window.location.pathname.split("/").filter(Boolean)[0];
+      if (!host.endsWith(".github.io") || !repository) return;
+
+      const owner = host.slice(0, -".github.io".length);
+      const link = document.getElementById("issues-link");
+      const fallback = document.getElementById("issues-fallback");
+      link.href = `https://github.com/${owner}/${repository}/issues`;
+      link.hidden = false;
+      fallback.hidden = true;
+    })();
+  </script>
+</body>
+</html>
